@@ -1,0 +1,170 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+li#teste:hover{
+  text-decoration: none;
+}
+
+nav li:hover {
+  text-decoration: none;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.header1{
+  font-family: tahoma;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(../_imagens/background1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: static;
+}
+
+.header2{
+  font-family: tahoma;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(../_imagens/background2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: static;
+}
+
+.header3{
+  font-family: tahoma;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(../_imagens/background3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: static;
+}
+
+.bmd-label-floating{
+  font-size: 15px;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.btnRegistrar{
+  margin-bottom: 3vh;
+}
+
+.panel-default>.panel-heading{
+  background-color: #003300;
+}
+
+.panel-title{
+  color: white;
+  font-weight: bold;
+}
+
+.PainelDeControle{
+  margin-top: 10vh;
+}
+
+.btnDeletar{
+  background-color: #D9534F;
+}
+
+.btnEditar{
+  background-color: #286090;
+}
+
+.btnSalvar{
+  background-color: #5BC0DE;
+}
+
+.btnLimpar{
+  background-color: #449D44;
+}
+
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    bottom:0;
+    width:100%;
+}
+
+a.lista{
+  text-decoration: none;
+  color: black;
+}
+
+button#login{
+  margin-top: -1vh;
+}
+
+.form-group{
+  margin-top: -3vh;
+}
+
+.alertLogin{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 2vh;
+  height: 30px;
+}
+
+p.alertMensagem{
+  margin-top: -2vh;
+}
+
+p.usuario{
+  color: black;
+}
+
+input#inputUsuario{
+  width: 100px;
+  margin-right: 2vh;
+}

@@ -1,0 +1,31 @@
+<nav ng-controller="LoginController as vm" class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a href="#!/" class="brand-logo">Home</a>
+    <ul class="right hide-on-med-and-down">
+      <div class="alert alert-danger alertLogin"  ng-if="vm.erro" ng-hide="vm.hideLoader">
+        <p class="alertMensagem">{{vm.erro}}</p>
+      </div>
+      <div class="alert alert-success alertLogin"  ng-if="vm.messagem" ng-hide="vm.hideLoader">
+        <p class="alertMensagem">{{vm.mensagem}}</p>
+      </div>
+    </ul>
+
+    <ul class="right hide-on-med-and-down" ng-if="!vm.isLoggedIn()">
+      <li><input id="inputUsuario" type="text" class="form-control input-sm" placeholder="Usuario" ng-model="vm.usuario" autocapitalize="none"></li>
+      <li><input id="inputUsuario" type="password" class="form-control input-sm" placeholder="Senha" ng-model="vm.senha" autocapitalize="none"></li>
+      <li><button id="login" type="submit" class="btn btn-sm btn-success" ng-click="vm.login()">Login</button></li>
+    </ul>
+
+    <ul class="right hide-on-med-and-down" ng-if="vm.isLoggedIn()" class="nav navbar-nav navbar-right">
+      <li><p class="navbar-text usuario">Bem Vindo: {{ vm.loggedInUser }}</p></li>
+      <li><button class="btn btn-sm btn-info" ng-click="vm.logout()">Sair</button></li>
+    </ul>
+
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#!/cadastroCandidato">Cadastro de Candidatos</a></li>
+      <li><a href="#!/listaCandidatos">Lista de Candidatos</a></li>
+    </ul>
+
+    <a data-toggle="collapse" data-target=".nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
